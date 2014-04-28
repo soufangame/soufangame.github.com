@@ -10,7 +10,19 @@
   <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
-
+  <script src="skel.min.js">
+        {
+            prefix: "style",
+            resetCSS: true,
+            boxModel: "border",
+            grid: { gutters: 30 },
+            breakpoints: {
+                wide: { range: "1200-", containers: 1140, grid: { gutters: 50 } },
+                narrow: { range: "481-1199", containers: 960 },
+                mobile: { range: "-480", containers: "fluid", lockViewport: true, grid: { collapse: true } }
+            }
+        }
+  </script>
   <title>sofun 游戏工作室</title>
   <meta name="description" content="">
 
@@ -20,45 +32,20 @@
 
 <body>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">sofun 游戏工作室</h1>
-    </header>
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <center>我们的目标</center>
+  <div class="container">
+        <div id="header" class="row">
+              <div class="4u">
+                        <h1>Example</h1>
+              </div>
+              <nav id="nav" class="8u">
+                        <a href="#">Home</a>
+                        <a href="#">About Me</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+            </nav>
         </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-                                    致力于使游戏变得简单快乐
-
-        </article>
-        <div class="inner">
-          <center>我们的作品</center>
-        </div>
-        <div class="inner">
-          <center>我们的团队</center>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
+  
   </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/soufangame/soufangame.github.com/tarball/master" class="tar">tar</a><a href="https://github.com/soufangame/soufangame.github.com/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
   
 </body>
 </html>
